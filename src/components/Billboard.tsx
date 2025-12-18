@@ -10,7 +10,14 @@ export default function Billboard(){
                    loop
                    poster="https://upload.wikimedia.org/wikipedia/commons/7/70/Big.Buck.Bunny.-.Opening.Screen.png"
             />
-
+            <div className="absolute top-[30%] md:top-[40%] ml-4 md:ml-16">
+                <h1 className="text-white text-1xl md:text-5xl h-full w-[50%] lg:text-6xl font-bold drop-shadow-xl">Big Buck Bunny</h1>
+                <p className="text-white text-[8px] md:text-lg mt-3 md:mt-8 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl">A giant rabbit with a heart bigger than himself.</p>
+                <div>
+                    <button>Play</button>
+                    <button>More Info</button>
+                </div>
+            </div>
         </div>
     )
 }
