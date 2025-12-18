@@ -1,13 +1,11 @@
-
 import './App.css'
+import Navbar from "./components/Navbar.tsx"
 
 function App() {
 
   return (
       <div className="min-h-screen bg-black">
-          <h1 className="text-red-600 text-4xl font-bold">
-              Netflix Clone
-          </h1>
+          <Navbar/>
       </div>
   )
 }
