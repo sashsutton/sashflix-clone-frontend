@@ -1,6 +1,9 @@
-
+import useInfoModal from '../hooks/useInfoModal';
 
 export default function Billboard(){
+
+    const {openModal} = useInfoModal();
+
     return(
         <div className="relative h-[56.25vw] bg-zinc-900">
             <video className="w-full h-full object-cover brightness-[60%]"
@@ -20,7 +23,9 @@ export default function Billboard(){
                         Play
                     </button>
 
-                    <button className="bg-white/30 text-white py-1 md:py-2 px-2 md:px-4 w-auto text-xs lg:text-lg font-semibold flex flex-row items-center hover:bg-white/20 transition rounded-md">
+                    <button
+                        onClick={() => openModal('1')}
+                        className="bg-white/30 text-white py-1 md:py-2 px-2 md:px-4 w-auto text-xs lg:text-lg font-semibold flex flex-row items-center hover:bg-white/20 transition rounded-md">
                         More Info
                     </button>
 

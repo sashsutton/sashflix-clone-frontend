@@ -1,12 +1,14 @@
 import type {MovieInterface} from "../types.ts";
 import { BsFillPlayFill } from "react-icons/bs";
 import { BiChevronDown, BiPlus } from "react-icons/bi";
+import useInfoModal from '../hooks/useInfoModal';
 
 interface MovieCardProps{
     data: MovieInterface;
 }
 
 export default function MovieCard({data}: MovieCardProps){
+    const { openModal } = useInfoModal();
     return(
         <div className="group bg-zinc-900 col-span relative h-[12vw]">
 
@@ -43,7 +45,9 @@ export default function MovieCard({data}: MovieCardProps){
                             <BiPlus size={30} className="text-white group-hover/item:text-neutral-300" />
                         </div>
 
-                        <div className="cursor-pointer ml-auto w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex justify-center items-center transition hover:bg-neutral-300">
+                        <div
+                            onClick={() => openModal(data.id)}
+                            className="cursor-pointer ml-auto w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex justify-center items-center transition hover:bg-neutral-300">
                             <BiChevronDown size={30} className="text-white group-hover/item:text-neutral-300" />
                         </div>
 
