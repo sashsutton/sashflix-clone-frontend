@@ -1,5 +1,7 @@
 # Netflix Clone (Frontend)
 
+## Live Demo [Netflix Clone](https://netflix-clone-frontend-delta-ashen.vercel.app/)
+
 ## About The Project
 
 This project is a high-fidelity frontend clone of the Netflix interface, built to demonstrate mastery in **Modern React**, **Advanced CSS/Tailwind**, and **Global State Management**.
