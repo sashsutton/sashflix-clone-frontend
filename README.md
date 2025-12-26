@@ -1,6 +1,11 @@
 # Netflix Clone (Frontend)
 
-## Live Demo [Netflix Clone](https://netflix-clone-frontend-delta-ashen.vercel.app/)
+## Live Demo 
+<a href="https://netflix-clone-frontend-delta-ashen.vercel.app/" target="_blank" rel="noopener noreferrer">
+  Netflix Clone
+</a>
+
+
 
 ## About The Project
 
